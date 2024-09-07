@@ -53,6 +53,12 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
 8. **Finalizing the Diagram**:  
    After ensuring all components were labeled and connected, I saved the diagram for future reference. This logical diagram provides a clear view of how the different elements of my SOC environment will interact.
 
+
+
+![image](https://github.com/user-attachments/assets/e177f8bb-ef3b-4157-881b-3ea3d1b32d6b)
+
+
+
 ## Recap
 I successfully created a logical diagram of the SOC environment. This diagram will serve as a roadmap for the infrastructure I’ll be working on throughout the project. Each element, from the servers to the private network, is now clearly mapped out, and I’m ready to start configuring the actual environment.
 
