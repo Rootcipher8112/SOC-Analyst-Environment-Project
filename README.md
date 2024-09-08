@@ -8,7 +8,7 @@ This comprehensive environment not only highlights my technical proficiency in d
 
 # Day 1: Logical Diagram Setup for SOC Analyst Environment
 
-## Introduction
+## Synopsis
 Today, I am setting up the foundation for my SOC analyst environment by creating a logical diagram. The goal is to outline the architecture of the servers and network components that I will be working with throughout the project. I will use **draw.io** to build the diagram and ensure all elements are connected logically to represent the flow of data and network interactions.
 
 ## Step-by-Step Process
@@ -62,9 +62,9 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
 ## Recap
 I successfully created a logical diagram of the SOC environment. This diagram will serve as a roadmap for the infrastructure I’ll be working on throughout the project. Each element, from the servers to the private network, is now clearly mapped out, and I’m ready to start configuring the actual environment.
 
-# Day 2: Introduction to the ELK Stack
+# Day 2: Synopsis to the ELK Stack
 
-## Introduction
+## Synopsis
 Today, I focused on understanding the ELK Stack, a combination of **Elasticsearch**, **Logstash**, and **Kibana**, which plays a crucial role in security operations. These tools help in centralizing, managing, and visualizing logs, making it easier to analyze and respond to security events. By the end of this session, I have a better grasp of how the ELK Stack works and its benefits in a SOC environment.
 
 ## Elasticsearch
@@ -104,7 +104,7 @@ I explored the architecture and benefits of the ELK Stack, including Elasticsear
 
 # Day 3: Spinning Up an Elasticsearch Instance
 
-## Introduction
+## Synopsis
 Today, I am focusing on spinning up my own **Elasticsearch** instance as part of building the ELK Stack for my SOC environment. By the end of this session, I will have a working instance of Elasticsearch running on a virtual machine in a cloud environment, ready for further configuration.
 
 ## Step-by-Step Process
@@ -168,7 +168,7 @@ I successfully set up and secured an **Elasticsearch** instance on a cloud-hoste
 
 # Day 4: Setting Up and Installing Kibana
 
-## Introduction
+## Synopsis
 Today, I focused on setting up **Kibana**, the final component of the ELK Stack that provides a web interface for querying and visualizing data from Elasticsearch. By the end of this session, I successfully installed and configured Kibana, ensuring it works in tandem with my Elasticsearch instance.
 
 ## Step-by-Step Process
@@ -231,7 +231,7 @@ I successfully installed and configured **Kibana**, connecting it to my Elastics
 
 # Day 5: Setting Up a Windows Server as a Target Machine
 
-## Introduction
+## Synopsis
 Today, I set up a **Windows Server** in the cloud, which will act as the target machine for the SOC environment. By the end of this session, I had a fully functional Windows Server with **Remote Desktop Protocol (RDP)** exposed to the internet, ready to start collecting login attempts and other data for analysis.
 
 ## Step-by-Step Process
@@ -262,7 +262,7 @@ By the end of today’s session, I successfully deployed a **Windows Server** in
 
 # Day 6: Understanding Fleet Server and Elastic Agent
 
-## Introduction
+## Synopsis
 Today, I focused on two key components for managing logs and data collection in a SOC environment: the **Elastic Agent** and the **Fleet Server**. These tools allow me to manage endpoints in a centralized manner, simplifying the process of updating and configuring agents. By the end of this session, I had a clear understanding of how these components work and their benefits.
 
 ## Elastic Agent
@@ -289,7 +289,7 @@ I explored the **Elastic Agent** and **Fleet Server**, two crucial tools for eff
 
 # Day 7: Installing Elastic Agent and Setting Up a Fleet Server
 
-## Introduction
+## Synopsis
 Today, I installed an **Elastic Agent** on the Windows Server I created earlier and set up a **Fleet Server** for centralized management. By the end of this session, I had my Windows Server enrolled into the Fleet, allowing for easy monitoring and data collection across endpoints.
 
 ## Step-by-Step Process
@@ -324,6 +324,41 @@ Today, I installed an **Elastic Agent** on the Windows Server I created earlier 
 ## Recap
 I successfully installed the **Elastic Agent** on my Windows Server and enrolled it in the **Fleet** for centralized management. Logs are now being collected, and I can manage the endpoint policies from one location. In the next session, I’ll set up **Sysmon** to monitor and log system activity on the Windows Server for deeper analysis.
 
+
+# Day 8: Understanding Sysmon and Key Event IDs
+
+## Synopsis
+Today, I explored the importance of **Sysmon** (System Monitor), a tool from Microsoft's Sysinternals suite that provides detailed telemetry from Windows endpoints. Proper visibility into endpoints is critical for SOC analysts to effectively investigate potential compromises. By the end of this session, I had a better understanding of what Sysmon offers and its ability to capture vital events for security monitoring.
+
+## What is Sysmon?
+**Sysmon** is a free tool that helps monitor critical events on Windows machines, such as:
+- Process Creations
+- Network Connections
+- File Creations
+
+It works through event logging and can be customized via a configuration file to focus on specific events. With **Sysmon version 15.15**, there are **30 different event IDs** that can be tracked, providing detailed insights into endpoint activity. Sysmon’s capabilities, like logging process creation with command-line details and recording file hashes, make it a powerful tool for detecting and investigating suspicious behavior.
+
+### Key Capabilities:
+- **Process Creations**: Logs process details, including command line, parent processes, and file hashes. This helps in detecting malicious activity by correlating events using the **Process GUID**.
+- **Network Connections**: Tracks source and destination IPs, ports, and the associated process. This is crucial for identifying potentially malicious connections, such as those from **Command and Control (C2)** processes.
+- **Customizable Configuration**: Sysmon's behavior can be tailored through a configuration file to enable or disable specific event logging, such as network connections, which is disabled by default.
+
+## Important Event IDs
+
+Here are a few key event IDs provided by Sysmon that are valuable during an investigation:
+
+1. **Event ID 1 (Process Creation)**: This tracks all new processes, their command lines, and file hashes, providing vital information for identifying suspicious activity. For example, if malware is executed, Sysmon will log this event.
+
+2. **Event ID 3 (Network Connections)**: When enabled, this event tracks network connections, including source and destination IPs and ports. It's incredibly useful for tracking suspicious outbound connections initiated by malware.
+
+3. **Event IDs 6, 7, 8 (Driver Load, Image Load, Create Remote Thread)**: These IDs help detect defense evasion techniques such as process injection, often used by attackers to bypass security tools.
+
+4. **Event ID 10 (Process Access)**: This event is helpful in identifying potential credential theft attempts, particularly targeting the **LSASS** process, which stores credentials in memory.
+
+5. **Event ID 22 (DNS Query)**: Monitoring DNS queries can reveal interesting patterns, including potential use of **Domain Generation Algorithms (DGA)**, which can indicate compromise.
+
+## Recap
+Sysmon provides essential telemetry for SOC analysts, allowing for detailed monitoring of endpoint activity. Understanding key event IDs like process creations and network connections enables more effective investigations and threat hunting. In the next session, I’ll demonstrate how to install Sysmon using a popular configuration to start collecting and analyzing Sysmon logs.
 
 
 
