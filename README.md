@@ -6,6 +6,8 @@ This 30 day project, when completed, is designed to simulate a real-world **Secu
 
 This comprehensive environment not only highlights my technical proficiency in deploying and managing critical security tools but also demonstrates a deep understanding of cybersecurity principles. Through the project, I aim to demonstrate my hands-on experience with log management, system monitoring, and centralized policy enforcement, skills that are essential for ensuring the protection and resilience of enterprise-level IT infrastructures.
 
+
+
 # Day 1: Logical Diagram Setup for SOC Analyst Environment
 
 ## Synopsis
@@ -62,6 +64,8 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
 ## Recap
 I successfully created a logical diagram of the SOC environment. This diagram will serve as a roadmap for the infrastructure I’ll be working on throughout the project. Each element, from the servers to the private network, is now clearly mapped out, and I’m ready to start configuring the actual environment.
 
+
+
 # Day 2: Synopsis to the ELK Stack
 
 ## Synopsis
@@ -100,6 +104,7 @@ After exploring the individual components, I identified several key benefits of 
 
 ## Recap
 I explored the architecture and benefits of the ELK Stack, including Elasticsearch, Logstash, and Kibana. These tools offer powerful solutions for managing logs, visualizing data, and scaling infrastructure in a SOC environment. With this knowledge, I am better equipped to work with log management and data analysis in a security operations context.
+
 
 
 # Day 3: Spinning Up an Elasticsearch Instance
@@ -166,6 +171,7 @@ Today, I am focusing on spinning up my own **Elasticsearch** instance as part of
 I successfully set up and secured an **Elasticsearch** instance on a cloud-hosted virtual machine. This instance will be a key component of my SOC environment, and in the next session, I’ll proceed with setting up **Kibana** to enable easier querying and visualization of logs via a web interface.
 
 
+
 # Day 4: Setting Up and Installing Kibana
 
 ## Synopsis
@@ -229,6 +235,8 @@ Today, I focused on setting up **Kibana**, the final component of the ELK Stack 
 ## Recap
 I successfully installed and configured **Kibana**, connecting it to my Elasticsearch instance and ensuring secure communication. This completes the setup of the ELK Stack. In the next session, I will configure a Windows Server to act as the target machine in my SOC environment.
 
+
+
 # Day 5: Setting Up a Windows Server as a Target Machine
 
 ## Synopsis
@@ -260,6 +268,7 @@ Today, I set up a **Windows Server** in the cloud, which will act as the target 
 By the end of today’s session, I successfully deployed a **Windows Server** in the cloud, exposed **RDP** to the internet, and ensured the server was operational. Over the next few hours, unsuccessful login attempts from the internet will begin to generate logs. In future sessions, I'll use these logs for analysis. In the next part, I’ll be setting up a **Fleet Server** to help manage configurations across multiple endpoints.
 
 
+
 # Day 6: Understanding Fleet Server and Elastic Agent
 
 ## Synopsis
@@ -285,6 +294,7 @@ Without a Fleet Server, I would have to manually update each agent’s configura
 
 ## Recap
 I explored the **Elastic Agent** and **Fleet Server**, two crucial tools for efficiently managing logs and metrics in a SOC environment. The Elastic Agent simplifies data collection by consolidating multiple data sources, while the Fleet Server allows me to manage all endpoints from a single location. In the next session, I will install the Elastic Agent and set up my own Fleet Server to begin centralized management.
+
 
 
 # Day 7: Installing Elastic Agent and Setting Up a Fleet Server
@@ -325,6 +335,7 @@ Today, I installed an **Elastic Agent** on the Windows Server I created earlier 
 I successfully installed the **Elastic Agent** on my Windows Server and enrolled it in the **Fleet** for centralized management. Logs are now being collected, and I can manage the endpoint policies from one location. In the next session, I’ll set up **Sysmon** to monitor and log system activity on the Windows Server for deeper analysis.
 
 
+
 # Day 8: Understanding Sysmon and Key Event IDs
 
 ## Synopsis
@@ -359,6 +370,8 @@ Here are a few key event IDs provided by Sysmon that are valuable during an inve
 
 ## Recap
 Sysmon provides essential telemetry for SOC analysts, allowing for detailed monitoring of endpoint activity. Understanding key event IDs like process creations and network connections enables more effective investigations and threat hunting. In the next session, I’ll demonstrate how to install Sysmon using a popular configuration to start collecting and analyzing Sysmon logs.
+
+
 
 
 
