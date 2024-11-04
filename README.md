@@ -1216,5 +1216,8 @@ With this new EDR capability, you can continue building on your **SOC analyst sk
 2. **Creating automated responses** for common attack vectors.
 3. **Testing malware detection** by running controlled scenarios and verifying the effectiveness of **Elastic Defend**.
 
-Tomorrow, I will focus on **troubleshooting** as I conclude the 30-day challenge.
+# Day 30: Documentation and Reflection on Challenge
+
+## Synopsis
+Today was spent reflecting back over this challenge. I also made sure to document key points from the errors made and lessons learned along the way for this write up. I also explored running this setup on prem through virtual machines on my desktop. The main constraint with this project is the ELK server itself. The requirements are on the high end for my current setup. I am currently running 32Gb of RAM so in order to successfully run all of these machines simultaneously I will need to upgrade to 64Gb of RAM and possibly upgrade my processor as well. Either way this was a great project and I learned alot.  Being able to take theory and a diagram then turn it into a real life scenario showing how a hacker can easily navigate through a network, exploit machines, and exfiltrate sensitive data is extremely eye opening. I look forward to completing further projects in the future and continuing to hone my skills as a security analyst.
 
