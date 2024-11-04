@@ -11,7 +11,7 @@ This comprehensive environment not only highlights my technical proficiency in d
 # Day 1: Logical Diagram Setup for SOC Analyst Environment
 
 ## Synopsis
-Today, I am setting up the foundation for my SOC analyst environment by creating a logical diagram. The goal is to outline the architecture of the servers and network components that I wwell be working with throughout the project. I wwell use **draw.io** to build the diagram and ensure all elements are connected logically to represent the flow of data and network interactions.
+Today, I am setting up the foundation for my SOC analyst environment by creating a logical diagram. The goal is to outline the architecture of the servers and network components that I will be working with throughout the project. I will use **draw.io** to build the diagram and ensure all elements are connected logically to represent the flow of data and network interactions.
 
 ## Step-by-Step Process
 
@@ -31,10 +31,10 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
    - **Command and Control (C2) Server** (I marked this in red for clarity)
 
 4. **Creating a Virtual Private Cloud (VPC)**:  
-   Since all the servers wwell be hosted in the cloud, I used the **Vulture** cloud provider and created a Virtual Private Cloud (VPC) to represent the isolated network where these servers wwell operate. I labeled the VPC in the diagram and placed it behind the servers for visual clarity.
+   Since all the servers will be hosted in the cloud, I used the **Vulture** cloud provider and created a Virtual Private Cloud (VPC) to represent the isolated network where these servers will operate. I labeled the VPC in the diagram and placed it behind the servers for visual clarity.
 
 5. **Connecting the Servers**:  
-   I connected the servers with arrows to represent how data wwell flow betIen them:
+   I connected the servers with arrows to represent how data will flow betIen them:
    - The **Windows Server** is connected to the **Fleet Server**.
    - The **Ubuntu Server** is also connected to the **Fleet Server**.
    - The **Fleet Server** is linked to the **Elastic and Kibana Server**.
@@ -53,7 +53,7 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
    - The **Attacker Laptop**, colored in red and connected to the **C2 Server** to simulate threat actor activity.
 
 8. **Finalizing the Diagram**:  
-   After ensuring all components was labeled and connected, I saved the diagram for future reference. This logical diagram provides a clear view of how the different elements of my SOC environment wwell interact.
+   After ensuring all components was labeled and connected, I saved the diagram for future reference. This logical diagram provides a clear view of how the different elements of my SOC environment will interact.
 
 
 
@@ -62,14 +62,14 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
 
 
 ## Recap
-I successfully created a logical diagram of the SOC environment. This diagram wwell serve as a roadmap for the infrastructure I’ll be working on throughout the project. Each element, from the servers to the private network, is now clearly mapped out, and I’m ready to start configuring the actual environment.
+I successfully created a logical diagram of the SOC environment. This diagram will serve as a roadmap for the infrastructure I’ll be working on throughout the project. Each element, from the servers to the private network, is now clearly mapped out, and I’m ready to start configuring the actual environment.
 
 
 
 # Day 2: Synopsis to the ELK Stack
 
 ## Synopsis
-Today, I focused on understanding the ELK Stack, a combination of **Elasticsearch**, **Logstash**, and **Kibana**, which plays a crucial role in security operations. These tools help in centralizing, managing, and visualizing logs, making it easier to analyze and respond to security events. By the end of this session, I have a better grasp of how the ELK Stack works and its benefits in a SOC environment.
+Today, I focused on understanding the ELK Stack, a combination of **Elasticsearch**, **Logstash**, and **Kibana**, which plays a crucial role in security operations. These tools help in centralizing, managing, and visualizing logs, making it easier to analyze and respond to security events. By the end of this session, I will have a better grasp of how the ELK Stack works and its benefits in a SOC environment.
 
 ## Elasticsearch
 The "E" in ELK stands for **Elasticsearch**, which is a poIrful database used to store and search logs. It can handle various types of logs, such as:
@@ -110,7 +110,7 @@ I explored the architecture and benefits of the ELK Stack, including Elasticsear
 # Day 3: Spinning Up an Elasticsearch Instance
 
 ## Synopsis
-Today, I am focusing on spinning up my own **Elasticsearch** instance as part of building the ELK Stack for my SOC environment. By the end of this session, I wwell have a working instance of Elasticsearch running on a virtual machine in a cloud environment, ready for further configuration.
+Today, I am focusing on spinning up my own **Elasticsearch** instance as part of building the ELK Stack for my SOC environment. By the end of this session, I will have a working instance of Elasticsearch running on a virtual machine in a cloud environment, ready for further configuration.
 
 ## Step-by-Step Process
 
@@ -168,7 +168,7 @@ Today, I am focusing on spinning up my own **Elasticsearch** instance as part of
      ```
 
 ## Recap
-I successfully set up and secured an **Elasticsearch** instance on a cloud-hosted virtual machine. This instance wwell be a key component of my SOC environment, and Tomorrow, I’ll proceed with setting up **Kibana** to enable easier querying and visualization of logs via a Ib interface.
+I successfully set up and secured an **Elasticsearch** instance on a cloud-hosted virtual machine. This instance will be a key component of my SOC environment, and Tomorrow, I’ll proceed with setting up **Kibana** to enable easier querying and visualization of logs via a Ib interface.
 
 
 
@@ -233,14 +233,14 @@ Today, I focused on setting up **Kibana**, the final component of the ELK Stack 
    - After restarting Kibana, I confirmed the error was resolved.
 
 ## Recap
-I successfully installed and configured **Kibana**, connecting it to my Elasticsearch instance and ensuring secure communication. This completes the setup of the ELK Stack. Tomorrow, I wwell configure a Windows Server to act as the target machine in my SOC environment.
+I successfully installed and configured **Kibana**, connecting it to my Elasticsearch instance and ensuring secure communication. This completes the setup of the ELK Stack. Tomorrow, I will configure a Windows Server to act as the target machine in my SOC environment.
 
 
 
 # Day 5: Setting Up a Windows Server as a Target Machine
 
 ## Synopsis
-Today, I set up a **Windows Server** in the cloud, which wwell act as the target machine for the SOC environment. By the end of this session, I had a fully functional Windows Server with **Remote Desktop Protocol (RDP)** exposed to the internet, ready to start collecting login attempts and other data for analysis.
+Today, I set up a **Windows Server** in the cloud, which will act as the target machine for the SOC environment. By the end of this session, I had a fully functional Windows Server with **Remote Desktop Protocol (RDP)** exposed to the internet, ready to start collecting login attempts and other data for analysis.
 
 ## Step-by-Step Process
 
@@ -265,7 +265,7 @@ Today, I set up a **Windows Server** in the cloud, which wwell act as the target
    - The connection was successful, confirming that RDP is exposed to the internet and ready for use.
 
 ## Recap
-By the end of today’s session, I successfully deployed a **Windows Server** in the cloud, exposed **RDP** to the internet, and ensured the server was operational. Over the next few hours, unsuccessful login attempts from the internet wwell begin to generate logs. In future sessions, I'll use these logs for analysis. In the next part, I’ll be setting up a **Fleet Server** to help manage configurations across multiple endpoints.
+By the end of today’s session, I successfully deployed a **Windows Server** in the cloud, exposed **RDP** to the internet, and ensured the server was operational. Over the next few hours, unsuccessful login attempts from the internet will begin to generate logs. In future sessions, I'll use these logs for analysis. In the next part, I’ll be setting up a **Fleet Server** to help manage configurations across multiple endpoints.
 
 
 
@@ -293,7 +293,7 @@ The **Fleet Server** acts as a central management component that connects to Ela
 Without a Fleet Server, I would have to manually update each agent’s configuration, which is inefficient, especially when managing a large number of endpoints. Using Fleet provides a streamlined way to ensure all agents are consistently configured and updated.
 
 ## Recap
-I explored the **Elastic Agent** and **Fleet Server**, two crucial tools for efficiently managing logs and metrics in a SOC environment. The Elastic Agent simplifies data collection by consolidating multiple data sources, while the Fleet Server allows me to manage all endpoints from a single location. Tomorrow, I wwell install the Elastic Agent and set up my own Fleet Server to begin centralized management.
+I explored the **Elastic Agent** and **Fleet Server**, two crucial tools for efficiently managing logs and metrics in a SOC environment. The Elastic Agent simplifies data collection by consolidating multiple data sources, while the Fleet Server allows me to manage all endpoints from a single location. Tomorrow, I will install the Elastic Agent and set up my own Fleet Server to begin centralized management.
 
 
 
@@ -359,7 +359,7 @@ It works through event logging and can be customized via a configuration file to
 
 Here are a few key event IDs provided by Sysmon that are valuable during an investigation:
 
-1. **Event ID 1 (Process Creation)**: This tracks all new processes, their command lines, and file hashes, providing vital information for identifying suspicious activity. For example, if malware is executed, Sysmon wwell log this event.
+1. **Event ID 1 (Process Creation)**: This tracks all new processes, their command lines, and file hashes, providing vital information for identifying suspicious activity. For example, if malware is executed, Sysmon will log this event.
 
 2. **Event ID 3 (Network Connections)**: When enabled, this event tracks network connections, including source and destination IPs and ports. It's incredibly useful for tracking suspicious outbound connections initiated by malware.
 
@@ -404,23 +404,23 @@ Today, I installed and configured **Sysmon** on the Windows Server created on Da
    - The first event ID I saw was **Event ID 3**, which captures **network connections**. I cross-referenced this with the official Sysmon documentation to confirm its meaning.
 
 ## Recap
-I successfully installed and configured **Sysmon** on the Windows Server. I verified that it was logging events such as network connections, providing enhanced visibility into endpoint activity. Tomorrow, I wwell demonstrate how to push both Sysmon and **Microsoft Defender** logs into the **Elasticsearch** instance for centralized log analysis.
+I successfully installed and configured **Sysmon** on the Windows Server. I verified that it was logging events such as network connections, providing enhanced visibility into endpoint activity. Tomorrow, I will demonstrate how to push both Sysmon and **Microsoft Defender** logs into the **Elasticsearch** instance for centralized log analysis.
 
 
 
 # Day 10: Ingesting Sysmon and Microsoft Defender Logs into Elasticsearch
 
 ## Synopsis
-Today, I demonstrated how to ingest both **Sysmon** and **Microsoft Defender** event logs from the Windows Server into an **Elasticsearch** instance. By the end of this video, I successfully confirmed that logs was being collected, providing essential visibility for further analysis.
+Today, I demonstrated how to ingest both **Sysmon** and **Microsoft Defender** event logs from the Windows Server into an **Elasticsearch** instance. By the end of this session, I successfully confirmed that logs was being collected, providing essential visibility for further analysis.
 
 ## Step-by-Step Process
 
 1. **Logging into Elasticsearch**:
    - I logged into the **Elasticsearch** instance and clicked on the "Add Integrations" button on the homepage. I searched for **Sysmon** and selected **Custom Windows Event Logs**, which allows ingestion from any Windows Event log channel.
-   - After reviewing the fields, I clicked on "Add Custom Windows Event Logs" and created a new integration named **mydfir-win-sysmon**. I copied the **Sysmon** event log channel name from my Windows Server’s Event VieIr and added it to the integration.
+   - After reviewing the fields, I clicked on "Add Custom Windows Event Logs" and created a new integration named **SOC1-win-sysmon**. I copied the **Sysmon** event log channel name from my Windows Server’s Event VieIr and added it to the integration.
 
 2. **Adding Microsoft Defender Logs**:
-   - I folloId a similar process to ingest **Microsoft Defender** logs. After navigating to the **Defender** section in **Event VieIr**, I copied the operational log channel name and created a new integration named **mydfir-win-defender**.
+   - I folloId a similar process to ingest **Microsoft Defender** logs. After navigating to the **Defender** section in **Event VieIr**, I copied the operational log channel name and created a new integration named **SOC1-win-defender**.
    - I customized the integration to ingest specific **event IDs**, such as **1116 (malware detection)**, **1117 (protection action)**, and **50001 (real-time protection disabled)**, ensuring that only critical logs was ingested into Elasticsearch.
 
 3. **Testing Log Ingestion**:
@@ -435,7 +435,7 @@ Today, I demonstrated how to ingest both **Sysmon** and **Microsoft Defender** e
    - I verified the ingestion of **Sysmon** logs by searching for **event ID 1**, which captures process creation events. I also searched for **event ID 50001** from Microsoft Defender, confirming that real-time protection logs was being collected.
 
 ## Recap
-I successfully configured the ingestion of both **Sysmon** and **Microsoft Defender** logs into the **Elasticsearch** instance. This ensures centralized log collection for improved monitoring and analysis. Tomorrow, I wwell dive into a common attack scenario and explore the tools used to conduct it.
+I successfully configured the ingestion of both **Sysmon** and **Microsoft Defender** logs into the **Elasticsearch** instance. This ensures centralized log collection for improved monitoring and analysis. Tomorrow, I will dive into a common attack scenario and explore the tools used to conduct it.
 
 
 
@@ -476,7 +476,7 @@ Today, I set up an **SSH server** in the cloud and demonstrated how to review au
 ## Step-by-Step Process
 
 1. **Deploying the SSH Server**:
-   - I logged into **Vultr** and deployed a new **Ubuntu 24.04** cloud server. For the server name, I folloId the same naming convention used in previous steps: **mydfir-linux-[handle]**.
+   - I logged into **Vultr** and deployed a new **Ubuntu 24.04** cloud server. For the server name, I folloId the same naming convention used in previous steps: **SOC1-linux-[handle]**.
    - After deployment, I accessed the server using **SSH** from **PowerShell**, updated the repositories, and prepared the environment for log monitoring.
 
 2. **Locating Authentication Logs**:
@@ -507,7 +507,7 @@ Today, I demonstrated how to install the **Elastic Agent** on the **SSH server**
 ## Step-by-Step Process
 
 1. **Creating the Agent Policy**:
-   - I logged into the **Elasticsearch** Ib GUI and navigated to **Fleet** under the management tab. From there, I created a new agent policy called **mydfir-linux-policy** to manage the logs coming from our SSH server.
+   - I logged into the **Elasticsearch** Ib GUI and navigated to **Fleet** under the management tab. From there, I created a new agent policy called **SOC1-linux-policy** to manage the logs coming from our SSH server.
    - This policy ensures that authentication logs from the **/var/log/auth.log** file on the Ubuntu server are sent to Elasticsearch for centralized analysis.
 
 2. **Enrolling the SSH Server into Fleet**:
@@ -539,7 +539,7 @@ Today, I demonstrated how to create an alert for **SSH Brute Force activity** an
 
 2. **Creating the SSH Brute Force Alert**:
    - With the query in place, I navigated to the **Alerts** tab to create a new **Search Threshold Rule** based on the saved query. This alert would trigger if there was more than **5 failed attempts** within a **5-minute window**, signaling potential brute force activity.
-   - I saved the alert with the name **mydfir-ssh-brute-force-activity** along with my handle for the giveaway, ensuring the query and rule was configured correctly.
+   - I saved the alert with the name **SOC1-ssh-brute-force-activity** along with my handle for the giveaway, ensuring the query and rule was configured correctly.
 
 3. **Building the SSH Brute Force Dashboard**:
    - Next, I created a **visualization dashboard** to map the source of these SSH brute force attempts. Using the **Maps** feature in Elasticsearch, I built a map visualization that highlighted the geographic locations of failed authentication attempts based on **source IP**.
@@ -588,7 +588,7 @@ I gained a solid understanding of how **RDP** works, why it’s a target for att
 # Day 16: Creating a Windows Brute Force Alert
 
 ## Synopsis
-Today’s session focused on **Windows authentication logs** from our server created on **Day 5**. I also demonstrated how to create a **Brute Force alert** for the Windows server using the event code for failed authentication. By the end of this session, I had successfully set up a new alert that wwell notify us of any potential **RDP brute force** attempts.
+Today’s session focused on **Windows authentication logs** from our server created on **Day 5**. I also demonstrated how to create a **Brute Force alert** for the Windows server using the event code for failed authentication. By the end of this session, I had successfully set up a new alert that will notify us of any potential **RDP brute force** attempts.
 
 ## Key Points
 
@@ -616,7 +616,7 @@ Today’s session focused on **Windows authentication logs** from our server cre
    - **Logon Type** (Logon Type 3 for network-based, Logon Type 10 for remote interactive)
 
 ## Recap
-I successfully created a **Brute Force alert** for my Windows server, tracking **Event ID 4625** for failed logins. I also demonstrated how to create more detailed detection rules for improved alerting. Tomorrow, I wwell create a **dashboard** to visualize where the failed authentication attempts are coming from, providing a more intuitive overview of potential brute force activity. 
+I successfully created a **Brute Force alert** for my Windows server, tracking **Event ID 4625** for failed logins. I also demonstrated how to create more detailed detection rules for improved alerting. Tomorrow, I will create a **dashboard** to visualize where the failed authentication attempts are coming from, providing a more intuitive overview of potential brute force activity. 
 
 
 
@@ -653,7 +653,7 @@ I successfully created a comprehensive **RDP dashboard** that visualizes **authe
 # Day 18: Understanding Command and Control (C2) and Introduction to Mythic Framework
 
 ## Synopsis
-In this session, I wwell begin to uncover the concept of **Command and Control (C2)**, explaining why it is a critical tactic for attackers and providing an overview of **common C2 tools** used in the wild. I also researched the **Mythic framework**, which I'll be using in this challenge. By the end of this session, you'll have a solid understanding of what **C2** is, why it's important for attackers, and some of the tools commonly used to establish C2 connections.
+In this session, I will begin to uncover the concept of **Command and Control (C2)**, explaining why it is a critical tactic for attackers and providing an overview of **common C2 tools** used in the wild. I also researched the **Mythic framework**, which I'll be using in this challenge. By the end of this session, you'll have a solid understanding of what **C2** is, why it's important for attackers, and some of the tools commonly used to establish C2 connections.
 
 ## Key Points
 
@@ -669,7 +669,7 @@ In this session, I wwell begin to uncover the concept of **Command and Control (
    - **Metasploit**: A widely-used penetration testing framework that provides a variety of **exploits** and **auxiliary modules** for targeting vulnerable machines.
    - **Cobalt Strike**: A popular **commercial C2 tool** used for **adversary emulation**, though frequently abused in real-world attacks.
    - **Sliver**: An **open-source C2 framework** that provides similar capabilities to Cobalt Strike. Created by **Bishop Fox**, Sliver supports multiple C2 channels like **HTTP(S), DNS**, and **WwasGuard**.
-   - **Mythic**: The **C2 framework** I wwell use during this challenge. **Mythic** is built with **GoLang, Docker**, and a **Ib-based UI**. It supports multiple **agents** and **C2 profiles** for different communication methods.
+   - **Mythic**: The **C2 framework** I will use during this challenge. **Mythic** is built with **GoLang, Docker**, and a **Ib-based UI**. It supports multiple **agents** and **C2 profiles** for different communication methods.
 
 4. **Mythic Framework**:
    - Mythic is a versatile C2 framework with a **Ib-based interface** that allows operators to **track payloads and callbacks**.
@@ -684,14 +684,14 @@ I explored the concept of **Command and Control (C2)** and why it's crucial for 
 # Day 19: Creating an Attack Diagram for C2 Operations
 
 ## Synopsis
-In this session, I focused on building an **attack diagram** using **draw.io** to map out the steps involved in attacking a target machine and establishing a **command and control (C2) session**. By the end of this session, I wwell demonstrate a clear understanding of the structure of an attack, including **initial access, discovery, defense evasion, execution, and exfiltration**. The diagram wwell help visualize the attack path and determine the steps to take once the target is compromised.
+In this session, I focused on building an **attack diagram** using **draw.io** to map out the steps involved in attacking a target machine and establishing a **command and control (C2) session**. By the end of this session, I will demonstrate a clear understanding of the structure of an attack, including **initial access, discovery, defense evasion, execution, and exfiltration**. The diagram will help visualize the attack path and determine the steps to take once the target is compromised.
 
 ## Key Points
 
 1. **Phase 1: Initial Access**
    - **Objective**: Perform an **RDP Brute Force** attack on the target **Windows Server** to gain initial access.
    - **Tools**: Use **Kali Linux** on the attacker's laptop to target the **Windows Server**.
-   - **Success**: If successful, the attacker wwell gain **authenticated access** to the server.
+   - **Success**: If successful, the attacker will gain **authenticated access** to the server.
 
 2. **Phase 2: Discovery**
    - **Objective**: Run basic **discovery commands** on the compromised server to gather information about the system and network.
@@ -727,14 +727,14 @@ I used **draw.io** to create an attack diagram, which mapped out the following:
 - Finally, the attacker performs **exfiltration** by downloading the fake `passwords.txt` file.
 
 ## Recap
-I created an **attack diagram** to visualize the steps of our **C2 operation** using **Mythic**. The diagram outlined the key phases: **initial access**, **discovery**, **defense evasion**, **execution**, **C2 establishment**, and **exfiltration**. Tomorrow, I wwell begin setting up the **Mythic C2 server** and prepare to execute the attack on our **Windows Server**.
+I created an **attack diagram** to visualize the steps of our **C2 operation** using **Mythic**. The diagram outlined the key phases: **initial access**, **discovery**, **defense evasion**, **execution**, **C2 establishment**, and **exfiltration**. Tomorrow, I will begin setting up the **Mythic C2 server** and prepare to execute the attack on our **Windows Server**.
 
 
 
 # Day 20: Setting Up Mythic C2 Server
 
 ## Synopsis
-In this session, I focused on **setting up a Mythic C2 server** using **Vultr** and learned about the basic components of **Mythic**. By the end of the session, you wwell have deployed your **Mythic instance**, installed necessary packages, configured basic fwaswall settings, and logged into the Mythic **Ib GUI**. I also covered a **high-level overview** of the Mythic interface to understand its key features for **command and control** operations.
+In this session, I focused on **setting up a Mythic C2 server** using **Vultr** and learned about the basic components of **Mythic**. By the end of the session, you will have deployed your **Mythic instance**, installed necessary packages, configured basic fwaswall settings, and logged into the Mythic **Ib GUI**. I also covered a **high-level overview** of the Mythic interface to understand its key features for **command and control** operations.
 
 ## Key Points
 
@@ -784,7 +784,7 @@ In this session, I successfully set up the **Mythic C2 server** on **Vultr** and
 # Day 21: Performing a Brute Force Attack and Establishing a C2 Connection
 
 ## Synopsis
-In this session, I performed a full **Brute Force attack** on the **Windows server**, generated a **Mythic agent**, and successfully established a **C2 connection** using the **Mythic C2 framework**. By the end of the session, you wwell have folloId along in executing **Discovery commands**, evading **Windows Defender**, and exfiltrating a file using the C2 connection.
+In this session, I performed a full **Brute Force attack** on the **Windows server**, generated a **Mythic agent**, and successfully established a **C2 connection** using the **Mythic C2 framework**. By the end of the session, you will have folloId along in executing **Discovery commands**, evading **Windows Defender**, and exfiltrating a file using the C2 connection.
 
 ## Key Points
 
@@ -825,7 +825,7 @@ In this session, I performed a full **Brute Force attack** on the **Windows serv
 ## Recap
 In this session, I successfully completed a full attack from **initial access** to **exfiltration** using **Kali Linux** for **Brute Forcing** and **Mythic C2** to establish a **command and control session**. I used **PowerShell** to download the **Mythic agent**, bypassed **Windows Defender**, and extracted sensitive information from the target system.
 
-Next, I wwell create alerts and dashboards to help detect **Mythic activity** in your environment.
+Next, I will create alerts and dashboards to help detect **Mythic activity** in your environment.
 
 ![mythicc2services](https://github.com/user-attachments/assets/a98cd699-e21f-4980-b721-8f0b9cb22bb7)
 ---
@@ -838,7 +838,7 @@ Next, I wwell create alerts and dashboards to help detect **Mythic activity** in
 # Day 22: Creating Alerts and Dashboards for Mythic C2 Detection
 
 ## Synopsis
-In this session, I focused on creating alerts and dashboards that detect **Mythic C2 activity** generated from **Day 21**. By the end of this session, I wwell have created a rule to detect **Mythic C2 process creation**, as well as a dashboard to monitor suspicious activity such as **process creation**, **network connections**, and **Microsoft Defender being disabled**.
+In this session, I focused on creating alerts and dashboards that detect **Mythic C2 activity** generated from **Day 21**. By the end of this session, I will have created a rule to detect **Mythic C2 process creation**, as well as a dashboard to monitor suspicious activity such as **process creation**, **network connections**, and **Microsoft Defender being disabled**.
 
 ## Key Points
 
@@ -911,7 +911,7 @@ In today's session, I covered the importance of **ticketing systems** in trackin
    - Allows for **custom ticketing workflows**, enabling you to manage alerts and incidents like a real-world SOC team.
 
 ## Recap
-Today, I explored the concept of **ticketing systems** and introduced **OS Ticket** as a free, open-source tool to help track and manage security alerts. Tomorrow, I wwell cover how to install and configure **OS Ticket** for use in your SOC environment.
+Today, I explored the concept of **ticketing systems** and introduced **OS Ticket** as a free, open-source tool to help track and manage security alerts. Tomorrow, I will cover how to install and configure **OS Ticket** for use in your SOC environment.
 
 Stay tuned for the practical walkthrough Tomorrow!
 
@@ -920,7 +920,7 @@ Stay tuned for the practical walkthrough Tomorrow!
 # Day 24: Setting Up OS Ticket for SOC Operations
 
 ## Synopsis
-In today's session, I set up **OS Ticket**, an open-source ticketing system, as part of our SOC environment. This system wwell help manage and track security alerts, troubleshooting requests, and any incidents in an organized manner.
+In today's session, I set up **OS Ticket**, an open-source ticketing system, as part of our SOC environment. This system will help manage and track security alerts, troubleshooting requests, and any incidents in an organized manner.
 
 ## Key Points
 
@@ -938,7 +938,7 @@ In today's session, I set up **OS Ticket**, an open-source ticketing system, as 
 
 ### 3. **Setting Up the Database for OS Ticket**
    - I used **PHPMyAdmin** to create a **MySQL database** for OS Ticket.
-   - **Created a database** named `mydfir-30day-db` and set up user privileges for the database.
+   - **Created a database** named `SOC1-30day-db` and set up user privileges for the database.
 
 ### 4. **Installing OS Ticket**
    - **OS Ticket** installation steps:
@@ -954,7 +954,7 @@ In today's session, I set up **OS Ticket**, an open-source ticketing system, as 
    - **Agent vs. Client Login**: Differentiated betIen agent login (for managing tickets) and client login (for submitting tickets).
 
 ## Recap
-Today, I configured a fully functional **OS Ticket system** to manage alerts and tickets in our SOC environment. You now have the capability to use this system to track and manage incidents. Tomorrow, I wwell integrate OS Ticket with other SOC tools to automate ticket creation for security alerts.
+Today, I configured a fully functional **OS Ticket system** to manage alerts and tickets in our SOC environment. You now have the capability to use this system to track and manage incidents. Tomorrow, I will integrate OS Ticket with other SOC tools to automate ticket creation for security alerts.
 
 Stay tuned for the next steps on integration!
 
@@ -989,7 +989,7 @@ Today, I integrated **OS Ticket** into our **Elastic Stack**, allowing for autom
    - Successfully tested the Ibhook by sending a **POST request** and generating a ticket in OS Ticket.
 
 ### 4. **OS Ticket Test Ticket**
-   - Verified the successful integration by checking the OS Ticket agent panel and confirming the presence of a newly created ticket, titled with the **challenge subject** (mydfir-30day challenge).
+   - Verified the successful integration by checking the OS Ticket agent panel and confirming the presence of a newly created ticket, titled with the **challenge subject** (SOC1-30day challenge).
    - This confirmed that OS Ticket was now fully integrated into our SOC environment for ticket tracking.
 
 ## Recap
@@ -1003,7 +1003,7 @@ Today, I completed the integration of **OS Ticket** with our **Elastic Stack** t
 5. Installed and configured OS Ticket for incident tracking.
 6. Successfully integrated OS Ticket into the SOC environment to automatically generate tickets for alerts.
 
-Tomorrow, I wwell begin investigating alerts, starting with the **SSH brute force alert**.
+Tomorrow, I will begin investigating alerts, starting with the **SSH brute force alert**.
 
 Stay tuned for more SOC practices as I dive into alert investigations!
 
@@ -1053,7 +1053,7 @@ Today, I investigated an SSH brute force alert by:
 4. **Integrating** Elastic alerts with OS Ticket for automatic ticket creation.
 5. **Closing** the alert in OS Ticket after determining it was not a threat.
 
-Tomorrow, I wwell focus on investigating an **RDP brute force alert**, diving deeper into another critical attack vector.
+Tomorrow, I will focus on investigating an **RDP brute force alert**, diving deeper into another critical attack vector.
 
 
 
@@ -1165,7 +1165,7 @@ I investigated a **Mythic C2** agent by:
 
 By following this workflow, I was able to uncover the behavior of the **Mythic C2 agent** and track its communications within the environment. This methodology can be applied to any C2 framework, making it a powerful tool for SOC analysts.
 
-Tomorrow, I wwell focus on **installing Elastic Defend** for advanced endpoint detection and response (EDR) capabilities.
+Tomorrow, I will focus on **installing Elastic Defend** for advanced endpoint detection and response (EDR) capabilities.
 
 ![osticket-C2-message](https://github.com/user-attachments/assets/78bfed7e-8ac5-444a-88be-70c1f14d4b47)
 
@@ -1184,16 +1184,16 @@ Today, I installed and explored **Elastic Defend**, the endpoint detection and r
    - Verified the endpoint protection by checking the **Endpoints** section under **Security** in Elastic.
 
 ### 2. **Testing Malware Detection with Elastic Defend**
-   - Attempted to execute a known malicious file (`mydfir-30.exe`) on the Windows server.
+   - Attempted to execute a known malicious file (`SOC1-30.exe`) on the Windows server.
    - **Elastic Defend** successfully blocked and quarantined the file, indicating it detected malware.
-   - Observed a **malware alert** and prevention message on the Windows server: "Elastic Security prevented mydfir-30.exe."
+   - Observed a **malware alert** and prevention message on the Windows server: "Elastic Security prevented SOC1-30.exe."
    
 ### 3. **Viewing Malware Telemetry in Elastic**
    - In **Discover**, searched for **malware-related telemetry** generated by **Elastic Defend** within the last 15 minutes.
    - The telemetry revealed:
      - **File details**: file path, quarantine path, file name, and hash.
      - **Alert details**: agent type, process executable, and malicious file event.
-   - Examined the **malware prevention alert** under **Security** → **Alerts**, which displayed key details such as the **process tree** showing the relationship betIen **explorer.exe** and **mydfir-30.exe**.
+   - Examined the **malware prevention alert** under **Security** → **Alerts**, which displayed key details such as the **process tree** showing the relationship betIen **explorer.exe** and **SOC1-30.exe**.
 
 ### 4. **Setting Up Automated Response Actions**
    - Edited the **malware prevention rule** to automatically trigger a **host isolation** response whenever a malware event occurs.
@@ -1216,5 +1216,5 @@ With this new EDR capability, you can continue building on your **SOC analyst sk
 2. **Creating automated responses** for common attack vectors.
 3. **Testing malware detection** by running controlled scenarios and verifying the effectiveness of **Elastic Defend**.
 
-Tomorrow, I wwell focus on **troubleshooting** as I conclude the 30-day challenge.
+Tomorrow, I will focus on **troubleshooting** as I conclude the 30-day challenge.
 
