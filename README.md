@@ -16,7 +16,7 @@ Today, I am setting up the foundation for my SOC analyst environment by creating
 ## Step-by-Step Process
 
 1. **Accessing draw.io**:  
-   I started by navigating to the [draw.io Ibsite](https://www.draw.io) and created a new diagram. After setting up the workspace, I renamed the diagram to something relevant to the environment I’m building.
+   I started by navigating to the [draw.io website](https://www.draw.io) and created a new diagram. After setting up the workspace, I renamed the diagram to something relevant to the environment I’m building.
 
 2. **Adding Server Icons**:  
    I searched for "server" in the icon menu and selected a standard server image. To create multiple servers, I duplicated the server icon until I had six servers, each representing a specific role in the environment.
@@ -136,7 +136,7 @@ Today, I am focusing on spinning up my own **Elasticsearch** instance as part of
      ```
 
 4. **Installing Elasticsearch**:
-   - To install Elasticsearch, I downloaded the package from the official Ibsite using:
+   - To install Elasticsearch, I downloaded the package from the official website using:
      ```
      wget <download_link>
      ```
@@ -180,7 +180,7 @@ Today, I focused on setting up **Kibana**, the final component of the ELK Stack 
 ## Step-by-Step Process
 
 1. **Downloading Kibana**:
-   - I started by visiting the [Elastic Ibsite](https://www.elastic.co/downloads/kibana) to download Kibana.
+   - I started by visiting the [Elastic website](https://www.elastic.co/downloads/kibana) to download Kibana.
    - After selecting the correct package for **Debian (x86 64-bit)**, I copied the download link and used `wget` in my SSH session to download Kibana.
 
 2. **Installing Kibana**:
@@ -385,7 +385,7 @@ Today, I installed and configured **Sysmon** on the Windows Server created on Da
    - I logged into my **Vultr** account, retrieved the public IP address of my Windows Server, and connected via **Remote Desktop**. After logging in with the administrator credentials, I opened Microsoft Edge to begin the Sysmon installation.
 
 2. **Downloading and Extracting Sysmon**:
-   - I Googled **Sysmon** and downloaded version 15.15 from the official **Microsoft Learn** Ibsite.
+   - I Googled **Sysmon** and downloaded version 15.15 from the official **Microsoft Learn** website.
    - After downloading the Sysmon zip file, I extracted it into a folder and verified the three binaries it contained.
 
 3. **Downloading a Sysmon Configuration File**:
